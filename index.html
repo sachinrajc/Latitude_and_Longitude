@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decimal Minutes to Decimal Degrees Converter</h1>
+        <p>Convert Latitude and Longitude from Decimal Minutes (DDM) to Decimal Degrees (DD)</p>
+
+        <div class="form">
+            <label for="latitude">Latitude (DDM):</label>
+            <input type="text" id="latitude" placeholder="e.g. 4300.82972N" required>
+
+            <label for="longitude">Longitude (DDM):</label>
+            <input type="text" id="longitude" placeholder="e.g. 08112.01112W" required>
+
+            <button onclick="convertCoordinates()">Convert</button>
+        </div>
+
+        <div class="result">
+            <h2>Converted Coordinates:</h2>
+            <p id="resultLatitude"></p>
+            <p id="resultLongitude"></p>
+            <div id="googleMapsLink"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
